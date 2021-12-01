@@ -79,4 +79,6 @@ Output: `3,3,NORTH`
 
 #### How to run robot ?
 
-Just run this command - `ruby robot/simulator.rb`
+Just run this command from root directory of the application -
+
+`ruby robot/simulator.rb`

@@ -43,8 +43,8 @@ module Robot
     end
 
     def validate_place_command
-      raise InvalidCommandError if command != 'PLACE' || !DIRECTIONS.include?(args[2])
-      raise ArgumentError unless args && args.size == 3
+      raise InvalidCommandError if command != 'PLACE'
+      raise ArgumentError unless args && args.size == 3 && DIRECTIONS.include?(args[2])
     end
 
     def log_movement
@@ -104,4 +104,4 @@ module Robot
   end
 end
 
-Robot::Simulator.run # run
+Robot::Simulator.run # start simulator
